@@ -1,0 +1,485 @@
+/* COULEURS */
+/* ============== */
+
+/* **Bleu main** : #0065FC */
+/* **Bleu second** : #DEEBFF */
+/* **Gris fond** : #F2F2F2 */
+
+/* ================================ */
+
+/* HEADER */
+/* ============== */
+header {
+   padding: 0 70px;
+   display: flex;
+   justify-content: space-between;
+}
+
+header img {
+   height: 50px;
+   width: auto;
+   margin-top: 35px;
+   display: inline-block;
+}
+
+header div {
+   display: flex;
+   height: 100%;
+}
+
+header a {
+   padding: 0 30px;
+   font-family: 'Raleway', 'Calibri', 'Trebuchet MS', sans-serif;
+   font-size: 18px;
+   font-weight: 400;
+   padding-top: 50px;
+   transition: all 0.2s ease-out;
+   border-top: 2px transparent solid;
+}
+
+header a:hover {
+   border-top: #0065fc solid 2px;
+   color: #0065fc;
+}
+
+/* MAIN */
+/* ============== */
+/* Section RECHERCHE */
+main h1 {
+   margin: 50px 70px -10px;
+   font-size: 25px;
+}
+
+/* sous titre section 1 main */
+main > p {
+   margin: 20px 70px;
+   font-size: 19px;
+}
+
+main form {
+   margin: 0 70px;
+   width: 490px;
+   height: 100%;
+   position: relative;
+   display: flex;
+   /* border: black 2px solid; */
+}
+
+main form i:first-child {
+   background-color: #f2f2f2;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 20px;
+   border-top-left-radius: 15px;
+   border-bottom-left-radius: 15px;
+}
+
+main input {
+   height: 55px;
+   width: 280px;
+   padding: 15px 0px 15px 20px;
+   font-weight: bold;
+   font-size: 21px;
+   border: none;
+   left: 58px;
+   border: #f2f2f2 1px solid;
+}
+
+main input:focus {
+   outline: none;
+}
+
+main button {
+   height: 55px;
+   border-top-right-radius: 15px;
+   border-bottom-right-radius: 15px;
+   background-color: #0065fc;
+   color: #fff;
+   font-weight: bold;
+   font-size: 21px;
+   border: none;
+   padding: 0 20px;
+   position: absolute;
+   right: 0;
+}
+
+main form i:last-child {
+   border-radius: 20px;
+   background-color: #0065fc;
+   color: #fff;
+   font-weight: bold;
+   font-size: 21px;
+   border: none;
+   padding: 40px 30px;
+   position: absolute;
+   right: 0;
+   display: none;
+}
+/* ============== */
+
+/* SECTION FILTRES */
+.section-filtres {
+   margin-top: 30px;
+   display: flex;
+   flex-wrap: wrap;
+   padding-right: 70px;
+}
+
+.section-filtres h2 {
+   font-size: 20px;
+   font-weight: bold;
+}
+
+.bouton-filtres {
+   border: gainsboro 2px solid;
+   border-radius: 50px;
+   display: flex;
+   align-items: center;
+   height: 100%;
+   max-height: 60px;
+   margin-left: 40px;
+   margin-bottom: 20px;
+   cursor: pointer;
+   transition: all 0.2s ease-in-out;
+}
+
+.bouton-filtres:hover {
+   color: #0065fc;
+   transform: scale(1.05);
+}
+
+.bouton-filtres-icon {
+   height: 60px;
+   width: 60px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 50%;
+   background-color: #deebff;
+   color: blue;
+   transform: translateX(-5px);
+}
+
+.bouton-filtres span {
+   padding: 0 20px 0 10px;
+   font-size: 20px;
+   font-weight: bold;
+   text-transform: capitalize;
+}
+/* ============== */
+
+/* Infos */
+
+.infos {
+   height: 100%;
+   display: flex;
+   align-items: flex-start;
+   margin: 15px 70px;
+}
+
+.infos p {
+   font-weight: 100;
+   font-size: 18px;
+   margin: 0;
+}
+
+.infos span {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 28px;
+   width: 28px;
+   border-radius: 50%;
+   border: gainsboro 2px solid;
+   margin: 0 20px 0 10px;
+   font-size: 18px;
+   color: #0065fc;
+   font-family: 'Arvo', serif;
+}
+/* ============== */
+
+/* SECTION CARTES */
+.section-cartes {
+   padding: 0 70px;
+   display: flex;
+   justify-content: space-between;
+   width: 100%;
+}
+
+.section-cartes > div {
+   padding: 0 40px;
+   background-color: #f2f2f2;
+   border-radius: 20px;
+}
+
+/* carte hebergement */
+#hebergements {
+   width: 66%;
+   margin-right: 20px;
+}
+
+.sections-titre {
+   margin: 50px 0 30px 0;
+}
+
+.hebergement-conteneur-cartes {
+   display: flex;
+   justify-content: space-around;
+   flex-wrap: wrap;
+}
+
+.hebergement-conteneur-cartes a {
+   height: 100%;
+}
+
+.hebergement-carte {
+   width: 280px;
+   height: 100%;
+   padding: 5px;
+   border-radius: 20px;
+   margin: 0 20px 30px 0;
+   background-color: #fff;
+   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
+}
+
+.hebergement-carte img {
+   width: 100%;
+   height: 120px;
+   border-radius: 15px 15px 0 0;
+   object-fit: cover;
+   object-position: center;
+}
+
+.hebergement-carte p {
+   margin: 4px 10px;
+   font-size: 18px;
+}
+
+.hebergement-carte > :nth-child(2) {
+   font-weight: bold;
+   margin-top: 10px;
+}
+
+.hebergement-carte > :nth-child(3) {
+   font-size: 17px;
+}
+
+.hebergement-carte > :nth-child(4) {
+   font-size: 18px;
+}
+
+.hebergement-carte > :nth-child(3) span {
+   font-weight: bold;
+}
+
+#hebergements > :last-child {
+   margin: 40px 0;
+   font-size: 20px;
+   font-weight: bold;
+   cursor: pointer;
+}
+/* -------- */
+
+/* carte populaires */
+#populaires {
+   min-width: 470px;
+   width: 31%;
+   padding: 0 50px 0 30px;
+   display: flex;
+   flex-direction: column;
+}
+
+#populaires > :first-child {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 100%;
+}
+
+#populaires > :first-child i {
+   margin-top: 20px;
+   font-size: 25px;
+}
+
+.populaire-carte {
+   min-width: 350px;
+   max-width: 600px;
+   width: 100%;
+   height: 160px;
+   padding: 5px;
+   border-radius: 20px;
+   margin-bottom: 30px;
+   background-color: #fff;
+   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
+   display: flex;
+   cursor: pointer;
+}
+
+.populaire-carte img {
+   min-width: 150px;
+   width: 40%;
+   height: 150px;
+   border-radius: 15px 0 0 15px;
+   object-fit: cover;
+   object-position: center;
+}
+
+.populaire-carte > :nth-child(2) {
+   margin-left: 20px;
+   font-size: 18px;
+   width: 200px;
+}
+
+.populaire-carte > div > :nth-child(1) {
+   font-weight: bold;
+   font-size: 18px;
+   margin-top: 5px;
+}
+
+.populaire-carte div p {
+   font-size: 16px;
+}
+
+.populaire-carte > div > :nth-child(2) {
+   margin-top: -10px;
+}
+
+.populaire-carte div p span {
+   font-weight: bold;
+}
+
+.populaire-carte > div > :nth-child(3) {
+   margin-top: 50px;
+}
+
+/* -------- */
+
+/* carte activités */
+#activités {
+   padding: 0px 70px 70px;
+}
+
+#activités > div {
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+}
+
+.activités-conteneurs {
+   width: 300px;
+   min-width: 200px;
+   border-radius: 20px;
+   height: 550px;
+   margin-right: 25px;
+   margin-bottom: 50px;
+}
+
+.activités-conteneurs img {
+   border-top-left-radius: 20px;
+   border-top-right-radius: 20px;
+}
+
+/* effet d'ombre sur les conteneurs simples  */
+.activités-conteneurs:not(:nth-child(even)) {
+   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* effet d'ombre sur les éléments des conteneurs doubles  */
+.activités-conteneurs > div {
+   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
+}
+
+.activités-conteneurs span {
+   display: inline-block;
+   font-size: 18px;
+   font-weight: bold;
+   padding: 15px 5px 10px 20px;
+   line-break: strict;
+}
+
+/* conteneurs doubles */
+.activités-conteneurs:nth-child(odd) img {
+   height: 89%;
+   width: 100%;
+   object-fit: cover;
+   object-position: center;
+}
+
+/* conteneurs paires */
+.activités-conteneurs:nth-child(even) {
+   display: flex;
+   justify-content: space-between;
+   flex-direction: column;
+}
+
+.activités-conteneurs:nth-child(even) img {
+   height: 80%;
+   width: 100%;
+}
+
+.activités-conteneurs:nth-child(even) div:first-child {
+   height: 55%;
+}
+
+.activités-conteneurs:nth-child(even) div:first-child img {
+   width: 100%;
+   height: 81%;
+   object-fit: cover;
+   object-position: center;
+}
+
+.activités-conteneurs:nth-child(even) div:last-child {
+   height: 40%;
+}
+
+.activités-conteneurs:nth-child(even) div:last-child img {
+   width: 100%;
+   height: 73%;
+   object-fit: cover;
+   object-position: top;
+}
+
+/* éléments 4, 8, 16 */
+/* inversement des cartes dans les conteneurs */
+.activités-conteneurs:nth-child(4n) {
+   flex-direction: column-reverse;
+}
+
+/* toutes les cartes des conteneurs doubles  */
+.activités-conteneurs div {
+   border-radius: 20px;
+}
+/* -------- */
+
+/* ================================ */
+
+/* FOOTER */
+/* ============== */
+footer {
+   width: 100%;
+   display: flex;
+   padding: 0 70px;
+   background-color: #f2f2f2;
+}
+
+footer nav {
+   width: 500px;
+   max-width: 500px;
+   padding: 30px 0;
+   display: flex;
+   flex-direction: column;
+   margin: 0 50px;
+}
+
+footer h2 {
+   font-size: 20px;
+   margin: 20px 0;
+}
+
+footer a {
+   margin: 10px 0;
+   font-size: 18px;
+}
+
+/* ================================ */
